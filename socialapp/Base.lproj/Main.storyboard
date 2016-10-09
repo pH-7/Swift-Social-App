@@ -22,6 +22,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUY-DR-A8r">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-un-qLI">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="J9v-vQ-aGd"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -30,11 +33,14 @@
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.65098039215686276" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.89028269052505493" green="0.88222998380661011" blue="0.89031857252120972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Dbj-un-qLI" secondAttribute="trailing" constant="22" id="UqH-Wm-Kbl"/>
                                     <constraint firstAttribute="bottom" secondItem="Dbj-un-qLI" secondAttribute="bottom" constant="8" id="Zq2-Ab-HIc"/>
                                     <constraint firstItem="Dbj-un-qLI" firstAttribute="leading" secondItem="cUY-DR-A8r" secondAttribute="leading" constant="15" id="bya-hO-Txf"/>
                                     <constraint firstItem="Dbj-un-qLI" firstAttribute="top" secondItem="cUY-DR-A8r" secondAttribute="top" constant="8" id="luY-Pg-zZy"/>
                                     <constraint firstAttribute="height" constant="128" id="oxq-Yh-2PZ"/>
+                                    <constraint firstItem="Dbj-un-qLI" firstAttribute="top" secondItem="cUY-DR-A8r" secondAttribute="top" constant="8" id="vBE-vs-c78"/>
                                     <constraint firstAttribute="trailing" secondItem="Dbj-un-qLI" secondAttribute="trailing" constant="22" id="wZZ-wn-Mbt"/>
+                                    <constraint firstItem="Dbj-un-qLI" firstAttribute="leading" secondItem="cUY-DR-A8r" secondAttribute="leading" constant="15" id="xgw-Yq-JNd"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEa-eW-fb5">
@@ -56,18 +62,38 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose your Sign In method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-p4-41p">
                                 <frame key="frameInset" minX="16" minY="136" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-fe-6re">
-                                <frame key="frameInset" minX="150" minY="200" width="150" height="150"/>
+                                <frame key="frameInset" minX="112" minY="172" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2454560399055481" green="0.3589748740196228" blue="0.60380846261978149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="60"/>
-                                <state key="normal" title="F">
+                                <state key="normal" backgroundImage="f">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZv-OQ-mMy">
+                                <frame key="frameInset" minX="40" minY="390" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwz-mM-7Jg">
+                                <frame key="frameInset" minX="40" minY="345" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWi-jz-Kb9">
+                                <frame key="frameInset" minX="40" minY="441" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="22"/>
+                                <state key="normal" title="Submit"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,4 +115,7 @@
             <point key="canvasLocation" x="301.60000000000002" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>
