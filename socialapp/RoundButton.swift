@@ -1,15 +1,15 @@
 //
-//  SignInView.swift
+//  RoundButton.swift
 //  socialapp
 //
-//  Created by PH Soria on 10/10/2016.
+//  Created by Pierre-Henry Soria on 14/10/2016.
 //  Copyright © 2016 Pierre-Henry Soria. All rights reserved.
 //
 
 import UIKit
 
-class SignInView: UIView {
-    
+class RoundButton: UIButton {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -18,4 +18,12 @@ class SignInView: UIView {
         layer.shadowRadius = 0.5
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // For making the buttons nicer (e.g. FB connect)
+        layer.cornerRadius = self.frame.width / 2
+    }
+    
 }
