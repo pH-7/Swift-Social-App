@@ -7,9 +7,10 @@ target 'socialapp' do
 
   # Pods for socialapp
   pod 'Firebase/Core'
-  pod 'Firebase/Auth'
+  pod 'Firebase/Auth' # For FB Login, etc.
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'FBSDKLoginKit'
   
   
  target 'socialappTests' do
